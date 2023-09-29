@@ -20,5 +20,8 @@ public class Main {
 
         lgList.insertValue(40,30);
         lgList.displayList();
+
+        lgList.searchAnddeleteNum(40);
+        lgList.displayList();
     }
 }
