@@ -4,10 +4,11 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Wellcome Data Structure Problems using Java Generics Project.");
 
-        LinkedListGenericsDay14 lgList = new LinkedListGenericsDay14();
+        LinkedListGenericsDay14<Integer> lgList = new LinkedListGenericsDay14<Integer>();
         lgList.pushValue(70);
         lgList.pushValue(30);
         lgList.pushValue(56);
 
+        lgList.displayList();
     }
 }
