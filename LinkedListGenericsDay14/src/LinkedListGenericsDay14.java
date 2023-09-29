@@ -1,6 +1,6 @@
-public class LinkedListGenericsDay14 {
+public class LinkedListGenericsDay14<I>{
     Node head;
-    void pushValue(int data){
+    void pushValue(I data){
         Node newNode = new Node(data);
         if (head==null){
             head=newNode;
@@ -8,5 +8,13 @@ public class LinkedListGenericsDay14 {
         }
         newNode.next=head;
         head=newNode;
+    }
+    void displayList(){
+        Node temp = head;
+        while (temp!=null){
+            System.out.print(temp.data+"-->");
+            temp=temp.next;
+        }
+        System.out.println();
     }
 }
